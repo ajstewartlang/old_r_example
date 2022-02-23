@@ -1,6 +1,6 @@
 # old_r_example
 
-1. Clone this repo to your local machine using `git clone https://github.com/ajstewartlang/old_r_example.git`.
+1. Clone this repo to your local machine using `git clone https://github.com/ajstewartlang/old_r_example.git`
 
 2. Open the `script.Rmd` file in your version of RStudio.
 
