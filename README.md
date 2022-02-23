@@ -1,8 +1,8 @@
 # old_r_example
 
-1. Clone this repo to youe local machine.
+1. Clone this repo to your local machine.
 
-2. Open the script.Rmd file in your local version of RStudio.
+2. Open the script.Rmd file in your version of RStudio.
 
 3. Knit the .Rmd file as an HTML document.
 
