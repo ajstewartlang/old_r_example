@@ -1,5 +1,5 @@
 ---
-title: "markdown"
+title: "markdown_test"
 output: html_document
 ---
 
@@ -40,5 +40,17 @@ tidied_factorial_data %>%
        y = "RT (ms.)") +
   theme_minimal() +
   coord_flip()
+```
+
+```{r}
+contrasts(tidied_factorial_data$context) <- matrix(c(.5, -.5))
+contrasts(tidied_factorial_data$sentence) <- matrix(c(.5, -.5))
+
+factorial_model <- lmer(RT ~ context * sentence + 
+                          (1 + context + sentence | subject) +
+                          (1 + context * sentence | item), 
+                        data = tidied_factorial_data)
+
+emmeans(factorial_model, pairwise ~ context*sentence, adjust = "none")
 ```
 
