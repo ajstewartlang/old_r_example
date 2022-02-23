@@ -1,6 +1,6 @@
 # old_r_example
 
-1. Clone this repo to your local machine.
+1. Clone this repo to your local machine using `git clone`.
 
 2. Open the script.Rmd file in your version of RStudio.
 
