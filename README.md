@@ -11,3 +11,5 @@
 By editing the code, can you make our output match the original?
 
 On your machine, build a Docker image from the cloned repo using `docker build -t old_r_example .` and run it with `docker run --rm -p 8787:8787 -v /home/rstudio/ -e PASSWORD=password old_r_example`. In your Docker container, knit the `.Rmd` file. Does the HTML now look like `original_markdown.html`?
+
+If you have the time, connent the Docker image above to a directory on your local machine. Pick one of your recent R scripts (maybe a mixed model one). Does it run using the version of R in this Docker container?
